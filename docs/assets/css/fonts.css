@@ -1,0 +1,19 @@
+@font-face {
+    font-family: avenirBlack;
+    src: url(../fonts/Avenir\ Black.ttf);
+}
+
+@font-face {
+    font-family: avenirHeavy;
+    src: url(../fonts/Avenir\ Heavy.ttf)
+}
+
+@font-face {
+    font-family: avenirRegular;
+    src: url(../fonts/Avenir\ Regular.ttf);
+}
+
+@font-face {
+    font-family: avenirBook;
+    src: url(../fonts/Avenir\ Book.ttf);
+}
