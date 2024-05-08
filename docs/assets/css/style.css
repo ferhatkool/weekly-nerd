@@ -1,0 +1,105 @@
+:root {
+    --title: avenirBlack;
+    --heading: avenirHeavy;
+    --text: avenirRegular;
+    --sub-text: avenirBook;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 5rem 5rem 1fr;
+    margin: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+footer {
+    grid-column: span 3;
+    grid-row: 1;
+    /* border: solid 1px blue; */
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    grid-column: span 3;
+    grid-row: 2;
+    overflow-y: hidden;
+    /* border: solid 1px red; */
+    background-color: white;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 3;
+    /* border: solid 1px green; */
+    border: 1px solid darkgray;
+    height: 80vh
+    
+}
+
+/* Adjust z-index for header and main to ensure they are behind dropdown menus */
+header, main {
+    position: relative;
+    z-index: 1; /* Adjust as needed */
+}
+
+.scrollable {
+    height: 80vh;
+    background-color: white;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+h1 {
+    font-family: var(--title);
+    text-align: center;
+    
+}
+
+h2 {
+    font-family: var(--heading);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: var(--heading);
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+p {
+    font-family: var(--sub-text);
+    font-size: 1.3rem;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+section {
+    min-height: 100vh;
+    margin-inline: 1.5rem;
+    
+}
+
+section ol {
+    margin-top: -2rem;
+}
+
+section ol li {
+    font-family: var(--sub-text);
+    font-size: 1.3rem;
+}
