@@ -5,6 +5,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tinyhttp/app": "^2.2.3",
+		"@tinyhttp/dotenv": "^2.1.1",
 		"@tinyhttp/logger": "^2.0.0",
 		"liquidjs": "^10.13.0",
 		"path": "^0.12.7",

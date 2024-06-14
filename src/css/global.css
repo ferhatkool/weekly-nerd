@@ -1,3 +1,31 @@
+@import 'navbar.css';
+@import 'scroll.css';
+
+@font-face {
+    font-family: avenirBlack;
+    src: url(../fonts/Avenir\ Black.ttf);
+    type: truetype;
+}
+
+@font-face {
+    font-family: avenirHeavy;
+    src: url(../fonts/Avenir\ Heavy.ttf);
+    type: truetype;
+}
+
+@font-face {
+    font-family: avenirRegular;
+    src: url(../fonts/Avenir\ Regular.ttf);
+    type: truetype;
+}
+
+@font-face {
+    font-family: avenirBook;
+    src: url(../fonts/Avenir\ Book.ttf);
+    type: truetype;
+}
+
+
 :root {
     --black: avenirBlack;
     --heavy: avenirHeavy;

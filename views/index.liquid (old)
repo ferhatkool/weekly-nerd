@@ -1,0 +1,194 @@
+{% layout "layouts/base.liquid" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+<header>
+    {% comment %} <h1>
+        {{ title }}
+    </h1> {% endcomment %}
+</header>
+
+<main id="home">
+    <h1>
+        {{ title }}
+    </h1>
+    <h2>De vakken</h2>
+    <section id="wafs">
+        <h2>Web App From Scratch</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="browser-technologies">
+        <h2>Browser Technologies</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="css-to-the-rescue">
+        <h2>CSS-to-the-rescue</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="hackathon">
+        <h2>De Hackathon</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="human-centered-design">
+        <h2>Human Centered Design</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="api">
+        <h2>API</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <h2>De 'wekelijkse' gastsprekers</h2>
+
+    <div class="sprekersContainer">
+        <section id="spreker-1" class="sprekers">
+            <h3>Kilian Valkhof</h3>
+            <img src="./pictures/kilian_original.jpg">
+            <p>Datum: 07-02-2024</p>
+            <p>Onderwerp: The rule of least power, move features from JS to HTML and CSS</p>
+        </section>
+
+        <section id="spreker-2" class="sprekers">
+            <h3>Fenna de Wilde</h3>
+            <img src="./pictures/fenna_original.jpg">
+            <p>Datum: 14-02-2024</p>
+            <p>Onderwerp: Cool & toegankelijk, principes in een 'hostile omgeving'</p>
+        </section>
+
+        <section id="spreker-3" class="sprekers">
+            <h3>Jeffrey Arts</h3>
+            <img src="./pictures/jeffrey_original.png">
+            <p>Datum: 28-02-2024</p>
+            <p>Onderwerp: Frontend en kunst, creeër een persoonlijke boiler plate/setup</p>
+        </section>
+
+        <section id="spreker-4" class="sprekers">
+            <h3>Nils Binder</h3>
+            <img src="./pictures/nils_original.jpg">
+            <p>Datum: 06-03-2024</p>
+            <p>Onderwerp: Design for Flexibility</p>
+        </section>
+
+        <section id="spreker-5" class="sprekers">
+            <h3>Jeremy Keith</h3>
+            <img src="./pictures/jeremy_original.png">
+            <p>Datum: 14-03-2024</p>
+            <p>Onderwerp: Declarative of imperative code/mindset/culture</p>
+        </section>
+
+        <section id="spreker-6" class="sprekers">
+            <h3>Marieke de Hoop & Pim Teeuwisse</h3>
+            <img src="./pictures/marieke_original.jpg">
+            <p>Datum: 03-04-2024</p>
+            <p>Onderwerp: Toegankelijkheid</p>
+        </section>
+
+        <section id="spreker-7" class="sprekers">
+            <h3>Rosa Schuurman</h3>
+            <img src="./pictures/rosa_original.png">
+            <p>Datum: 10-04-2024</p>
+            <p>Onderwerp: Creative coding & Circuit bending</p>
+        </section>
+    </div>
+    
+    <h2>De weekly Nerd gesprekken</h2>
+
+    <section id="weekly-nerd-1">
+        <h2>Weekly Nerd 1</h2>
+        <h3>Mijn plannen</h3>
+        <p>De minor Webdevelopment-en design heb ik gekozen, omdat ik tijdens mijn opleiding enkele websites heb moeten maken voor projecten. Hierbij was het echter niet van belang hoe de website eruit zag, of deze toegankelijk was of dat de code netjes geschreven was. Het moest simpelweg werken en ik moest de code kunnen verklaren. Vanwege deze projecten heb ik wel een interesse gekregen voor webdevelopment en ben ik mezelf steeds meer gaan uitdagen m.b.t. het maken van websites, maar heb ik nooit de mogelijkheid genomen om me meer te verdiepen in webdevelopement en webdesign. Om deze reden heb ik gekozen om deze minor te volgen, zodat ik eindelijk alle tijd en ruimte heb om meer ervaring en kennis op te doen als het gaat om webdevelopement. Ik ben ook bereid om mijn uiterste best te doen om tijdens deze minor succesvol mijn vaardigheden te kunnen uitbreiden, beginnende bij JavaScript.</p>
+            
+        <p>Tijdens mijn opleiding werd ons altijd verteld dat we beslist geen JavaScript mochten gebruiken, omdat dit in de browser kan worden uitgeschakeld en dit beveiligingsrisico’s met zich mee mocht brengen. JavaScript mocht ook niet worden gebruikt om de website meer vorm te geven, omdat wederom het uitschakelen van JavaScript de werking van de website kon verstoren. Door de twee genoemde redenen heb ik altijd Python moeten gebruiken als ik mijn website dynamischer wilde maken of als ik authenticatie a.d.h.v. een inlogpagina wilde toepassen op de website. Ik heb dus wel redelijk was ervaring met coderen, wat de opstap naar het gebruik maken van JavaScript gemakkelijker zou moeten maken. Kort gezegd wil ik meer ervaring op doen met JavaScript, om zo geadvanceerdere en professionelere websites te kunnen maken!</p>
+            
+        <p>Tevens wil ik ook me meer verdiepen in het correct schrijven van HTML en CSS, zodat wat ik codeer geen warboel meer zal zijn. Nu plak ik overal maar classes en divs in mijn code, wat het overzicht in de code voor mezelf en voor anderen weghaald en biedt mijn code geen toegankelijkheid voor mijn website. Ik zou dus graag willen leren hoe ik correct code schrijf en de toegankelijkheid van mijn website kan opschroeven.</p>
+            
+        <h3>Wat neem ik mee van de sprekers?</h3>
+            
+        <p>Helaas heb ik alleen Kilian kunnen meemaken als gastspreker, omdat ik woensdag 14 februari niet aanwezig kon zijn door ziekte. Wat ik in ieder geval van Kilian mee neem zijn enkele voorbeelden die hij gaf van functionaliteiten, zoals de accordions en de dialogs. Verder neem ik de motivatie dat ik van zijn gastles kreeg mee tijdens de gehele minor. Hij heeft mij zo erg kunnen motiveren door iets dat vrij technisch hoort te zijn zo makkelijk te laten klinken door het heel interessant te vertellen. Hierdoor zal ik ook tijdens het maken van websites altijd in mijn achterhoofd houden dat was in JavaScript mogelijk is wellicht ook in CSS mogelijk is en om daar mee te gaan experimenteren.</p>
+    </section>
+
+    <section id="weekly-nerd-2">
+        <h2>Weekly Nerd 2</h2>
+        <h3>Uitkomst van de Hackaton en mijn inbreng & opgedane inzichten.</h3>
+        <p>Kort gezegd, samen met mijn groepje heb ik de Hackaton gewonnen! De beoordelende ‘jury’ vond ons project kwalitatief erg sterk en daar sluit ik me ook bij aan. Samen met Eva Boogaard, Nicole Schilder en Niels Aling heb ik na drie dagen hard werken een product opgeleverd waar per gehouden CSS-day evenement informatie wordt getoond dat wij relevant vonden. Hier heeft uiteraard iedereen zijn eigen steentje bij bijgedragen met zijn/haar skills. Eva heeft zich heel erg gericht op het zo leuk mogelijk maken van de vormgeving van de site, Niels heeft zich vooral bezig gehouden met het maken van een ‘flip klok’ en de vormgeving van de site, Nicole met de kleine, maar toch leuke en relevante details en ik heb me alleen maar bezig gehouden met het ophalen en verwerken van de data a.d.h.v. JavaScript.</p>
+        <p>Wat ik heb gedaan klinkt misschien erg simpel en weinig, maar ik, als iemand die pas vanaf het begin van de minor gebruik is gaan maken van JavaScript, vond het toch lastig om de taak uit te voeren. Het ophalen van de data vond ik nog wel relatief simpel, maar het verwerken ervan vond ik wel een dingetje. Dit komt met name door de keren dat het evenement niet werd gehouden door Corona, dat het evenement in het begin maar één dag werd gehouden of het toelichten van de meest relevante spreker. Hier heb ik zelf in JavaScript functies voor geschreven die daar rekening meehoudt, waardoor er voor bijvoorbeeld het jaar 2014 bij de ticket maar één jaartal staan, oftewel, één element i.p.v. twee, of door een array object te sorteren op het aantal views op de YouTube video, terwijl de rest van de bijbehorende data mee wordt gesorteerd op basis van het aantal views. Door me bezig te houden met zulke relatief ‘kleine’ en niet geheel belangrijke taken, heb ik toch erg veel ervaring en kennis opgedaan over JavaScript en hoe om te gaan met data. Zowel ik als mijn groepsgenoten waren erg tevreden over mijn inbreng en inzet voor de Hackaton, en we zijn (als het goed is) allemaal erg blij dat we dit mini-project samen hebben kunnen uitvoeren!</p>
+
+        <h3>Reflectie op hoe het tot nu toe gaat.</h3>
+        <p>Naar mijn mening ga ik redelijk positief door de minor heen. Het heeft wel zijn pieken, zoals het behalen van een 10 voor API, en dalen, zoals het niet afmaken van de opdracht van browser technologies en voor de herkansing een 5.5 krijgen. Desalniettemin heb ik het nog enorm naar mijn zin en leer ik elke dag weer veel bij! Als ik het per codeertaal moet bekijken i.p.v. per vak denk ik dat ik meer progressie heb gemaakt in het begrijpen en leren van JavaScript. Dit was, zoals eerder benoemd, erg nieuw voor mij en ik kan me nog goed herinneren dat ik op de eerste dag van de minor echt paniek kreeg van hoe weinig ik begreep van JavaScript. Als ik dat moment zou moeten vergelijken met nu, ben ik erg overtuigd van hoeveel mijn JavaScript skills zijn verbeterd en dat is, naar mijn mening, ook terug te zien in het vak API. Ik heb voor de opdracht die ik heb gemaakt enorm veel JavaScript (moeten) gebruiken, zowel back-end als front-end, om zo tot een goed werkend geheel te komen. Door de kracht van JavaScript en de mogelijkheden van CSS en Liquid goed te benutten heb ik naar mijn mening die 10 ook verdiend. Ik ben gewoon enorm trots op wat ik heb kunnen realiseren voor het vak API. =D</p>
+        <p>Ook voor het vak Browser Technologies heb ik veel JavaScript gebruikt, misschien zelfs teveel. Bij dit vak liep ik erg tegen mijn kwaaltjes aan, waar het eerst werkend krijgen van de functionaliteiten één van is. Doordat dit vak i.c.m. CSS-to-the-rescue werd gegeven, vond ik het erg lastig om mijn tijd in een enigzins balans te verdelen onder de vakken. Door de combinatie van het werkend willen krijgen van alle functionaliteiten van de opdracht van Browser Technologies en de opdracht van CSS-to-the-rescue, waar ik best wel moeite mee had, heb ik geen tijd besteed aan het maken van een design voor de opdracht van Browser Technologies. Hierdoor kreeg ik door de beoordelende docent al gelijk een onvoldoende voor de opdracht, wat ik natuurlijk ook zeker wel begrijp. Het is ook juist door die onvoldoende dat ik ben gaan inzien dat mijn aanpak voor de opdracht zeker niet de juiste was. Ik heb dit juist als leermoment gezien van hoe het juist niet moet, om zo bij volgende vakken mijn tijd meer in balans te spenderen aan de bijbehorende opdrachten en de opdracht in een balans tussen functionaliteit en design af te maken i.p.v. dat ik me maar op één van de twee focus.</p>
+        <p>De opdracht voor CSS-to-the-rescue was al helemaal een uitdaging voor mij, omdat ik nog weinig ervaring had in het correct schrijven van CSS en het uitwerken van een bedacht design dat enkele functionaliteiten kent, in alleen CSS. Ik vond het wel erg leuk om aan dit vak te werken en om functionaliteiten werkend te zien die ik heb gemaakt door alleen CSS te gebruiken. Ook bij dit vak liep ik, net als bij Browser Technologies, tegen het probleem aan dat ik de functionaliteiten eerst af wilde hebben voordat ik met het design begon. Echter had het geen dat ik voor dit vak maakte minder functionaliteiten dan het geen voor de opdracht van Browser Technologies en had ik alle functionaliteiten al snel af, waardoor ik eerder met het design kon beginnen. Door het maken van de opdracht ging er een wereld voor mij open vanwege de mogelijkheden van CSS. Nooit had ik zelf kunnen bedenken dat CSS voor zoveel gebruikt kon worden en daarom ben ik ook erg blij dat ik mijn best heb gedaan om de opdracht zo goed mogelijk af te maken. Ik heb er enorm veel van geleerd en dat ga ik allemaal meenemen naar volgende opdrachten waar ik veel aan het design moet werken. </p>
+        <p>Human Centered Design was iets geheel nieuws voor mij. Ik heb gedurende mijn opleiding wel opdrachten moeten maken voor een ‘opdrachtgever’, maar niet met de opdrachtgever door testfases heen gelopen om uiteindelijk iets te maken dat perfect bij de opdrachtgever past, wie in mijn geval mevrouw Besemer was. Überhaupt het maken voor één specifiek persoon i.p.v. voor een algemene opdrachtgever was voor mij erg nieuw en ook wel wennig, omdat ik constant in mijn hoofd het idee had dat, wat ik maakte, voor zou moeten werken. Terwijl het juist heel erg gericht op mevrouw Besemer moest zijn, omdat ik iets voor haar aan het oplossen was. Desalniettemin heb ik mijn best gedaan om een oplossing te vinden voor haar probleem en zij was na de laatste test erg lovend over het geen dat ik had gemaakt, dus dat was erg fijn om te horen. =D</p>
+        <p>Tenslotte hebben we het vak API, waar ik het meest trotst ben op wat ik heb gemaakt. Direct aan het begin van het vak had ik al bedacht wat ik zou willen maken, maar dit leek mij toen nog onmogelijk met de skills die ik op dat moment had. Maar toch heb ik door er simpelweg mijn best voor te doen en het überhaupt te doen het onmogelijke, mogelijk gemaakt en heb ik gewoon een super tof product weten te realiseren dat volgens de docent een dikke 10 waard was. Dit heeft mij enorm veel motivatie gegeven om verder te gaan met het geen waar ik mee bezig ben en om mijn uiterste best te doen voor de meesterproef, omdat ik van mezelf het idee heb gekregen dat ik het sowieso toch wel kan, als ik er eenmaal mijn best voor doe.</p>
+        <p>Ik heb niet bepaald specifieke voorbeelden van echt hoogste punten, behalve het geen dat ik voor API heb gemaakt, maar ik ben zelf van mening dat ik mijn skills voor het Web Developen en Designen heel erg heb verbeterd ten opzichte van drie maanden geleden en ik ben enorm trots op wat ik nu al heb bereikt qua ervaringen, kennis en vaardigheden!</p>
+
+        <h3>Leerdoelen voor de meesterproef.</h3>
+        <p>Voorafgaand aan de meesterproef heb ik de volgende leerdoelen opgesteld:</p>
+        <ol>
+            <li>Meer van JavaScript leren, zowel front-end als back-end. Geen specifiek doel hierbij</li>
+            <li>Meer met Web API’s, zoals GSAP werken</li>
+            <li>Betere en nettere CSS schrijven, met daarbij ook vaker standaard design principes hanteren.</li>
+        </ol>
+        <p>Het eerst leerdoel komt voort uit de ontwikkelingen die ik heb geboekt tijdens deze minor, namelijk het ontwikkelen van mijn JavaScript vaardigheden. Hier zou ik graag mee verder willen gaan tijdens de meesterproef. Ook wil ik iets nieuws proberen, namelijk het meer leren werken met Web API’s, met als focus GSAP. Waarom GSAP? Het lijkt mij een erg toffe tool om te gebruiken om de websites die ik zou maken er veel gaafer uit te laten zien en ik zie de meesterproef (hoop ik) als mogelijkheid om GSAP te kunnen gebruiken. Indien dit niet mogelijk is wil ik alsnog andere Web API’s gaan gebruiken voor de meesterproef. Tenslotte wil ik één van mijn valkuilen tegen gaan en dat is toch CSS. Ik moet mezelf gewoon aanleren om betere, efficiëntere en nettere code te schrijven en vaker standaard design principes hanteren om mijn websites er beter uit te laten zien.</p>
+    </section>
+
+    <section id="weekly-nerd-3">
+        <h2>Weekly Nerd 3</h2>
+        <p>-to be continued-</p>
+    </section>
+
+    <section id="meesterproef">
+        <h2>Meesterproef</h2>
+        <p>-to be continued-</p>
+    </section>
+</main>
+
+<footer>
+    <nav role="navigation" class="primary-navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li tabindex="0" onclick="openMenuItem('1')" class="menuItemButton"><a>Vakken &dtrif;</a>
+                <ul id="menuItem1" class="dropdown">
+                    <li><a href="#wafs">Web App From Scratch</a></li>
+                    <li><a href="#browser-technologies">Browser Technologies</a></li>
+                    <li><a href="#css-to-the-rescue">CSS-to-the-rescue</a></li>
+                    <li><a href="#hackathon">Hackathon</a></li>
+                    <li><a href="#human-centered-design">Human Centered Design</a></li>
+                    <li><a href="#api">API</a></li>
+                </ul>
+            </li>
+            <li tabindex="0" onclick="openMenuItem('2')" class="menuItemButton"><a>Sprekers &dtrif;</a>
+                <ul id="menuItem2" class="dropdown">
+                    <li><a href="#spreker-1">Kilian Valkhof</a></li>
+                    <li><a href="#spreker-2">Fenna de Wilde</a></li>
+                    <li><a href="#spreker-3">Jeffrey Arts</a></li>
+                    <li><a href="#spreker-4">Nils Binder</a></li>
+                    <li><a href="#spreker-5">Jeremy Keith</a></li>
+                    <li><a href="#spreker-6">Marieke & Pim</a></li>
+                    <li><a href="#spreker-7">Rosa</a></li>
+                </ul>
+            </li>
+            <li tabindex="0" onclick="openMenuItem('3')" class="menuItemButton"><a>Weekly Nerds &dtrif;</a>
+                <ul id="menuItem3" class="dropdown">
+                    <li><a href="#weekly-nerd-1">Weekly Nerd 1</a></li>
+                    <li><a href="#weekly-nerd-2">Weekly Nerd 2</a></li>
+                    <li><a href="#weekly-nerd-3">Weekly Nerd 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#meesterproef">Meesterproef</a></li>
+        </ul>
+    </nav>
+    <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/dropdown.js"></script>
+</footer>
+
+
+{% endblock %}
