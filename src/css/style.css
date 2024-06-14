@@ -1,0 +1,90 @@
+:root {
+    --black: avenirBlack;
+    --heavy: avenirHeavy;
+    --regular: avenirRegular;
+    --light: avenirBook;
+    --backgroundColorSite: rgb(24,20,20);
+    --white: rgb(255,255,255);
+}
+
+h1, h2, h3, p {
+    color: var(--white);
+    
+}
+
+h1 {
+    font-family: var(--black);
+}
+
+h2 {
+    font-family: var(--heavy);
+}
+
+h3 {
+    font-family: var(--regular);
+}
+
+p {
+    font-family: var(--regular);
+}
+
+/* section {
+    min-height: 100vh;
+} */
+
+body {
+    background-color: var(--backgroundColorSite);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr;
+    margin: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    grid-column: 1;
+    grid-row: 2;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+footer {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sprekersContainer {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(calc(25rem - 4px), 1fr)); */
+    grid-template-columns: repeat(auto-fill, 24rem);
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.sprekers {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sprekers h3 {
+    text-align: center;
+}
+
+.sprekers img {
+    align-self: center;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.sprekers p {
+    width: 100%;
+}
+
+.sprekers p:nth-of-type(2) {
+    min-height: 2em;
+}
