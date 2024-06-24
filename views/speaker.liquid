@@ -1,1 +1,33 @@
 {% layout "layouts/base.liquid" %}
+
+{% block content %}
+
+<main class="content">
+    <section class="title">
+        <div>
+            <h1>{{ speaker.name }}</h1>
+            <p>Onderwerp: {{ speaker.description }}</p>
+            <p>Datum: {{ speaker.date }}</p>
+        </div>
+        <img src="{{ speaker.image }}">
+    </section>
+    <div class="two">
+        <section class="left">
+            <h2>Waar ging het over?</h2>
+                {% for  value in speaker.content.one %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+        </section>
+        <section class="right">
+            <h2>Wat neem ik mee?</h2>
+                {% for value in speaker.content.two %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+        </section>
+    </div>
+
+
+    
+</main>
+
+{% endblock %}

@@ -1,1 +1,40 @@
 {% layout "layouts/base.liquid" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <h1>
+        Weekly Nerd - Ferhat Kool
+    </h1>
+
+    <div class="sprekersContainer">
+        {% for summary in subjects %}
+            {% include "partials/summary.liquid"
+            , {summary} %}
+        {% endfor %}
+    </div>
+
+    <div class="sprekersContainer">
+        {% for summary in speakers %}
+            {% include "partials/summary.liquid"
+            , {summary} %}
+        {% endfor %}
+    </div>
+
+    <div class="sprekersContainer">
+        {% for summary in weeklyNerds %}
+            {% include "partials/summary.liquid"
+            , {summary} %}
+        {% endfor %}
+    </div>
+    {% comment %} {% for summary in subjects %}
+        {% include "partials/summary.liquid"
+        , {summary} %}
+    {% endfor %} {% endcomment %}
+</main>
+
+{% endblock %}

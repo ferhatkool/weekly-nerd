@@ -1,0 +1,87 @@
+{% layout "layouts/base.liquid" %}
+
+{% block content %}
+
+<main class="content">
+    <section class="hero">
+        <h1>{{ subject.name }}</h1>
+        <img src="{{ subject.image }}">
+    </section>
+    <section>
+        <h2>De opdracht</h2>
+        <h3>Introductie</h3>
+        <p>Voor Buurtcampus-Oost heb ik samen met mijn groepje gewerkt aan het realiseren van een levendige website voor de groenprojecten die de Buurtcampus wilde digitaliseren om een groter bereik te hebben. De groenprojecten waar de Buurtcampus momenteel mee bezig is zijn:</p>
+        <div class="three">
+            <section class="left">
+                <p>De stekjeskast</p>
+                <div>
+                    <img src="./pictures/meesterproef/plant1.png">
+                </div>
+                
+            </section>
+            <section class="middle">
+                <p>De zadenbibliotheek</p>
+                <div>
+                    <img src="./pictures/meesterproef/zaad1.png">
+                </div>
+                
+            </section>
+            <section class="right">
+                <p>De geveltuin</p>
+                <div>
+                    <img src="./pictures/meesterproef/geveltuin1.png">
+                </div>
+                
+            </section>
+        </div>
+        <p>De website die wij hebben gerealiseerd dient als een overkoepelende laag voor de drie groenprojecten. Voor het realiseren is gebruik gemaakt van een bestaand design dat door studenten van FDND is ontworpen, maar op basis van de wensen van de opdrachtgever hebben wij hier aanpassingen aan gemaakt. </p>
+        <h3>Wensen</h3>
+        <p>De opdrachtgever was al bekend met het design van de studenten van FDND en vond dit ook een goed design. Echter vond ze dat het nog niet levendig genoeg was. Ze wilde in de eerste instantie dat de website minimaal vier verschillende thema’s zou krijgen, voor elk seizoen eentje. Al snel kwamen wij met het voorstel om dit uit te breiden tot een website waar het weer invloed heeft op de hoofdpagina, met natuurlijk de wens van de opdrachtgever erbij gerekend. Hier was de opdrachtgever erg enthousiast van en wilde dolgraag dat wij dit zouden gaan realiseren. Het idee dat wij hebben bedacht is dus één van de wensen van de opdrachtgever geworden. </p>
+        <p>Een andere wens van de opdrachtgever was het aantrekken van ook jongere buurtbewoners. Hiervoor hebben wij een mascotte bedacht die tips geeft over wat iemand met zijn/haar plant moet doen bij de huidige weersomstandigheden. Deze is uiteindelijk Harry genoemd, Harry Potter. Is het een bepaalde temperatuur buiten en is dat te koud voor een plant? Harry laat het weten door een bepaald bericht te tonen op de informatie pagina van de plant. Ook dit idee maakte de opdrachtgever erg enthousiast en dit zou een must worden om te implementeren.</p>
+        <h3>Opgeleverd Product</h3>
+        <p>Het product dat wij hebben opgeleverd is een site dat de drie groenprojecten van Buurtcampus Oost overkoepeld. Hierbij hebben wij aanpassingen verricht aan een bestaand design om de website levendiger te maken. Dit hebben we o.a. gedaan door seizoensthema’s te ontwerpen, weer-animaties weer te geven op de hoofdpagina op basis van de huidige weersomstandigheden bij Buurtcampus-Oost en het bedenken van een mascotte genaamd Harry dat tips kan geven over stekjes/planten op basis van de huidige weersomstandigheden.</p>
+        <p>Het project staat geheel up-to-date op <a href="https://github.com/N13L5A97/BiebinBloei">GitHub</a>, met daarbij ook een WiKi waar het gehele project beschreven staat. De website zelf is te vinden op <a href="https://biebinbloei.onrender.com/">onrender</a></p>
+        </section>
+    <section>
+        <h2>Mijn inbreng</h2>
+        <p>De inbreng dat ik heb geleverd is natuurlijk deels op basis geweest van mijn leerdoelen, maar ook op basis van wat ik al kon. Zo heb ik inbreng gehad in het opzetten van de back-end server. Dit heb ik deels met Niels gedaan, maar omdat één van mijn leerdoelen ook was dat ik wilde leren om samen met iemand aan een taak te werken en leren omgaan met hulp aanbieden, heb ik Niels het voortouw laten nemen. Waar nodig was, kon ik inspringen om hem te helpen en samen kwamen we er eigenlijk prima uit. </p>
+        <p>Ook ben ik bezig geweest met het implementeren van een Weather API. Eerst om data op te kunnen halen van een dergelijke API, om vervolgens te bedenken wat er mogelijk zou kunnen zijn met de data. Al snel vond ik de API <a href="https://www.weatherapi.com">WeatherAPI</a> (vrij logische naam). Met deze API is het mogelijk om van een specifieke lengte- en breedtegraag informatie over de real-time weersomstandigheden op te halen. De hoeveelheid data dat van de API te verkrijgen is, is ruim voldoende om weer-animaties te kunnen implementeren. Het ophalen van de data verloopt wel via de back-end, dus hiervoor ben ik de code in gedoken om uit te vogelen hoe dit het beste geïmplementeerd kon worden. Al snel kreeg ik het idee om een apart back-end scriptje te maken, maar om dit werkend te krijgen moest ik eerst uitzoeken hoe dit mogelijk was. Door dit uit te zoeken ging er een wereld voor me open, omdat het main-server script niet meer overspoeld hoeft te worden met functies. Deze kunnen namelijk simpel in een ander back-end scriptje, waarbij de functie wordt geëxporteerd en weer wordt geïmporteerd door het main-server scriptje.</p>
+        <p>Het implementeren van de Weather API a.d.h.v. weersgebonden animaties heb ik deels samen met Nicole gedaan. Zij heeft de animaties bedacht en gerealiseerd en ik heb ervoor gezorgd dat deze in een juist formaat in de website werden geïmplementeerd. Nicole maakte namelijk de animaties in een simpel, leeg HTML bestandje, wat niet overeenkomst met hoe wij de back-end hebben geregeld. Na dit aangepast te hebben, heb ik Nicole laten meekijken naar hoe ik dit heb gedaan en begrijpt zij de werking van de animaties in de back-end beter.</p>
+        <p>Om de animaties cooler te maken en wat eigenlijk vanaf het begin het idee was, heb ik van twee animaties enkele waardes dynamisch gemaakt. Het beste voorbeeld is de animatie voor regen. Wanneer er bij de Buurtcampus Oost weinig regen valt, vallen er op de hoofdpagina ook weinig druppels. Als het juist weer heel hard regent, vallen er veel meer druppels. Dit heb ik gedaan op basis van de hoeveelheid milimeter neerslag dat real-time op de locatie van de Buurtcampus valt. Door dit als root-waarde mee te geven bij het renderen van de hoofdpagina, kan CSS dit gebruiken in een bepaalde berekening, dat uiteindelijk de waarde is van de hoeveelheid druppels die worden getoond op de pagina. </p>
+        <p>Ook heb ik me bezig gehouden met het bedenken en implementeren van een page-transition. Dit wilde wij graag implementeren, omdat we het niet zo mooi vonden dat bij het navigeren naar een andere pagina de content op het beeld “splashed”. Dit wilde we liever iets subtieler, en om deze reden is het implementeren van een page-transition bedacht. Het was aan mij de taak om uit te zoeken hoe dit geïmplementeerd zou kunnen worden. Na meerdere ideeën te hebben bedacht en te hebben ontvangen, heb ik besloten om bij het navigeren naar een andere pagina een blaadje te tonen dat heel klein begint en al snel 500% geschaald is, waardoor heel het scherm gevuld is. Dit gebeurt in .3 seconden. Wanneer de animatie klaar is en de volgende pagina gereed is om getoond te worden, vindt dezelfde animatie plaats, maar dan omgekeerd. Doordat het plaatje dezelfde geschaling en positie heeft, zal er niks op het scherm veranderen tijdens het doorsturen van de bezoeker en lijkt het op een zeer nette transitie. </p>
+        <p>Ik heb ook meegewerkt aan het maken van de website op basis van het design, waar ik zowel CSS-kennis dat ik al had heb kunnen toepassen, maar ook weer nieuwe dingen heb geleerd. Zo heb ik CSS-nesting geleerd door hulp dat ik van Niels kreeg. Tenslotte heb ik me gedurende de meesterproef bezig gehouden met het helpen waar mogelijk is op het gebied van JavaScript. Zo gaf Lars meerdere keren aan dat hij JavaScript nog best lastig vond en keek ik met hem mee om het geen waar hij tegen aan liep te verhelpen. Vrijwel elke keer lukte dit en legde ik aan hem uit wat ik heb gedaan en wat de logica erachter was. Ook Nicole en Niels heb ik kunnen helpen met JavaScript vragen. Op mijn hulp kreeg ik altijd positieve feedback, dus dat toont naar mijn mening aan dat ik zowel beter ben geworden in JavaScript als het uitleggen van JavaScript.</p>
+    </section>
+    
+    <div class="">
+
+    </div>
+
+    <h2>Leerdoelen</h2>
+    <div class="three">
+        <section class="left">
+            <h3>"Meer van JavaScript leren, zowel front-end als back-end."</h3>
+            {% for value in subject.content.one %}
+                <p>{{ value }}</p>
+            {% endfor %}
+        </section>
+        <section class="middle">
+            <h3>"Betere en nettere CSS schrijven, met daarbij ook vaker 'standaard design principes hanteren.'"</h3>
+            {% for value in subject.content.two %}
+                <p>{{ value }}</p>
+            {% endfor %}
+        </section>
+        <section class="right">
+            <h3>"Leren om samen iemand aan een taak te werken en leren omgaan met hulp aanbieden/accepteren."</h3>
+            {% for value in subject.content.three %}
+                <p>{{ value }}</p>
+            {% endfor %}
+        </section>
+    </div>
+
+    <section>
+        <h2>Reflectie</h2>
+        <p>Ik heb met erg veel plezier aan de meesterproef gewerkt. De opdracht vond ik voor mezelf uitdagend genoeg en ik ben erg tevreden over het product dat mijn groepje en ik hebben ontwikkeld. Ook ben ik erg tevreden met mijn inbreng in het project. Ik ben van mening dat ik echt een nuttige bijdrage heb geleverd aan het uiteindelijk product en ook aan mijn groepje. Zelf heb ik er veel van geleerd of kennis/vaardigheden die ik tijdens de minor heb opgedaan kunnen toepassen, zoals in mijn leerdoelen staat beschreven. Al met al, ik vind van mezelf dat ik het erg goed heb gedaan! =D</p>
+    </section>
+</main>
+
+{% endblock %}

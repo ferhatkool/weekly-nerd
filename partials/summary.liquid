@@ -1,0 +1,14 @@
+<section id="{{ summary.id }}" class="sprekers" data="">
+    <article>
+        <h3>
+            {{ summary.name }}
+        </h3>
+        <a href="/{{ summary.id }}">
+            <img src="{{ summary.image }}">
+        </a>
+        <p>Datum: {{ summary.date }}</p>
+        {% if summary.description %}
+            <p>Onderwerp: {{ summary.description }}</p>
+        {% endif %}
+    </article>
+</section>

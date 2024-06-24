@@ -1,0 +1,45 @@
+<footer>
+            <nav role="navigation" class="primary-navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li tabindex="0" onclick="openMenuItem('1')" class="menuItemButton"><a>Vakken &dtrif;</a>
+                        <ul id="menuItem1" class="dropdown">
+                            <li><a href="/web-app-from-scratch">Web App From Scratch</a></li>
+                            <li><a href="/browser-technologies">Browser Technologies</a></li>
+                            <li><a href="/css-to-the-rescue">CSS-to-the-rescue</a></li>
+                            <li><a href="/human-centered-design">Human Centered Design</a></li>
+                            <li><a href="/api">API</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0" onclick="openMenuItem('2')" class="menuItemButton"><a>Sprekers &dtrif;</a>
+                        <ul id="menuItem2" class="dropdown">
+                            <li><a href="/kilian-valkhof">Kilian Valkhof</a></li>
+                            <li><a href="/fenna-de-wilde">Fenna de Wilde</a></li>
+                            <li><a href="/jeffrey-arts">Jeffrey Arts</a></li>
+                            <li><a href="/nils-binder">Nils Binder</a></li>
+                            <li><a href="/jeremy-keith">Jeremy Keith</a></li>
+                            <li><a href="/marieke-en-pim">Marieke & Pim</a></li>
+                            <li><a href="/rosa-schuurman">Rosa</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0" onclick="openMenuItem('3')" class="menuItemButton"><a>Weekly Nerds &dtrif;</a>
+                        <ul id="menuItem3" class="dropdown">
+                            <li><a href="/weekly-nerd-one">Weekly Nerd 1</a></li>
+                            <li><a href="/weekly-nerd-two">Weekly Nerd 2</a></li>
+                            <li><a href="/weekly-nerd-three">Weekly Nerd 3</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0" onclick="openMenuItem('4')" class="menuItemButton"><a>Specials &dtrif;</a>
+                        <ul id="menuItem4" class="dropdown">
+                            <li><a href="/hackathon">Hackathon</a></li>
+                            <li><a href="/meesterproef">Meesterproef</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                {% comment %} <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                    <i class="fa fa-bars"></i>
+                  </a> {% endcomment %}
+            </nav>
+            <script src="./js/script.js"></script>
+            <script src="./js/dropdown.js"></script>
+        </footer>

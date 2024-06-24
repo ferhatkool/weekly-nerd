@@ -11,5 +11,10 @@
 
     <body>
         {% block content %}{% endblock %}
+
+        {% block footer %}
+            {% include "partials/navigation.liquid" %}
+        {% endblock %}
+
     </body>
 </html> 
