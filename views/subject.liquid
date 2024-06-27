@@ -7,25 +7,32 @@
         <h1>{{ subject.name }}</h1>
         <img src="{{ subject.image }}">
     </section>
-    <div class="three">
-        <section class="left">
-            <h2>Omschrijving van het vak</h2>
-            {% for value in subject.content.one %}
-                <p>{{ value }}</p>
-            {% endfor %}
-        </section>
-        <section class="middle">
-            <h2>Gemaakte opdracht</h2>
-            {% for value in subject.content.two %}
-                <p>{{ value }}</p>
-            {% endfor %}
-        </section>
-        <section class="right">
-            <h2>Reflectie</h2>
-            {% for value in subject.content.three %}
-                <p>{{ value }}</p>
-            {% endfor %}
-        </section>
+    <div class="two">
+        <div>
+            <section class="left">
+                <p>Periode: {{ subject.date }}</p>
+                <h2>Omschrijving van het vak</h2>
+                {% for value in subject.content.one %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+            </section>
+            <section class="left">
+                <h2>Reflectie</h2>
+                {% for value in subject.content.three %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+            </section>
+        </div>
+        <div>
+            <section class="right">
+                <h2>Gemaakte opdracht</h2>
+                {% for value in subject.content.two %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+            </section>
+
+        </div>
+
     </div>
 
 </main>

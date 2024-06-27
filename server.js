@@ -57,8 +57,6 @@ app.get('/meesterproef', async (req, res) => {
 
 app.get('/:name', async (req, res) => {
     const url = req.params.name;
-    console.log(url)
-    console.log(subjects[url])
 
     if (subjects[url]) {
         return res.send(renderTemplate('views/subject.liquid', {
