@@ -10,18 +10,27 @@
     <div class="two">
         <div>
             <section class="left">
-                <p>{{ speaker.name }} - {{ speaker.date }}</p>
+                <p id="sub-title">{{ speaker.name }} - {{ speaker.date }}</p>
+                {% for value in speaker.content.one %}
+                    <p>{{ value }}</p>
+                {% endfor %}
+            </section>
+            <section class="left">
                 <h2>Wat neem ik mee?</h2>
-                    {% for  value in speaker.content.one %}
-                        <p>{{ value }}</p>
+                    {% for item in speaker.content.two %}
+                        <p>{{ item }}</p>
                     {% endfor %}
             </section>
         </div>
         <div>
             <section class="right">
                 <h2>Waar ging het over?</h2>
-                    {% for value in speaker.content.two %}
-                        <p>{{ value }}</p>
+                    {% for item in speaker.content.three %}
+                        {% if item[0] contains "code" %}
+                            <p style="color: red;"> {{ item[1] }}</p>
+                        {% else %}
+                            <p>{{ item[1] }}</p>
+                        {% endif %}
                     {% endfor %}
             </section>
         </div>

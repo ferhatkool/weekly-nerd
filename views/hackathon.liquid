@@ -4,18 +4,16 @@
 
 <main class="content">
     <section class="hero">
-        <h1>{{ weeklyNerd.name }}</h1>
-        <img src="{{ weeklyNerd.image }}">
+        <h1>{{ subject.name }}</h1>
+        <img src="{{ subject.image }}">
     </section>
     
     <div class="one">
         <section>
-            <p id="sub-title">Datum: {{ weeklyNerd.date }}</p>
+            <p id="sub-title">Periode: {{ subject.date }}</p>
         </section>
         
-    {% for item in weeklyNerd.content %}
-        
-            
+    {% for item in subject.content %}
             <section>
                 <h2>{{ item[0] }}</h2>
                 {% for subitem in item %}

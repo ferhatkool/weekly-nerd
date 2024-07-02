@@ -27,6 +27,10 @@
                 <p>De opdrachtgever was al bekend met het design van de studenten van FDND en vond dit ook een goed design. Echter vond ze dat het nog niet levendig genoeg was. Ze wilde in de eerste instantie dat de website minimaal vier verschillende thema’s zou krijgen, voor elk seizoen eentje. Al snel kwamen wij met het voorstel om dit uit te breiden tot een website waar het weer invloed heeft op de hoofdpagina, met natuurlijk de wens van de opdrachtgever erbij gerekend. Hier was de opdrachtgever erg enthousiast van en wilde dolgraag dat wij dit zouden gaan realiseren. Het idee dat wij hebben bedacht is dus één van de wensen van de opdrachtgever geworden. </p>
                 <p>Een andere wens van de opdrachtgever was het aantrekken van ook jongere buurtbewoners. Hiervoor hebben wij een mascotte bedacht die tips geeft over wat iemand met zijn/haar plant moet doen bij de huidige weersomstandigheden. Deze is uiteindelijk Harry genoemd, Harry Potter. Is het een bepaalde temperatuur buiten en is dat te koud voor een plant? Harry laat het weten door een bepaald bericht te tonen op de informatie pagina van de plant. Ook dit idee maakte de opdrachtgever erg enthousiast en dit zou een must worden om te implementeren.</p>
             </section>
+            {% comment %} <img class="harry" src="./pictures/"> {% endcomment %}
+            {% comment %} <div class="harry">
+                {% include "partials/harry.liquid" %}
+            </div> {% endcomment %}
         </div>
     </div>
     <div class="one">
@@ -45,25 +49,26 @@
         <button class="button" id="button-left"><</button>
         <button class="button" id="button-right">></button>
         <h2>Leerdoelen</h2>
-        <section>              
-                <h3>"Meer van JavaScript leren, zowel front-end als back-end."</h3>
-                {% for value in subject.content.one %}
-                    <p>{{ value }}</p>
-                {% endfor %}           
+        <section class="slider">              
+            <h3>"Meer van JavaScript leren, zowel front-end als back-end."</h3>
+            {% for value in subject.content.one %}
+                <p>{{ value }}</p>
+            {% endfor %}           
         </section>
 
-        <section>
+        <section class="slider">
             <h3>"Betere en nettere CSS schrijven, met daarbij ook vaker 'standaard design principes hanteren.'"</h3>
             {% for value in subject.content.two %}
                 <p>{{ value }}</p>
             {% endfor %}
         </section>
-        <section>
+        <section class="slider">
             <h3>"Leren om samen iemand aan een taak te werken en leren omgaan met hulp aanbieden/accepteren."</h3>
             {% for value in subject.content.three %}
                 <p>{{ value }}</p>
             {% endfor %}
         </section>
+
     </div>
 
     <div class="one">

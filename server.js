@@ -52,7 +52,14 @@ app.get('/meesterproef', async (req, res) => {
     return res.send(renderTemplate('views/meesterproef.liquid', {
         subject: subjects["meesterproef"],
         title: subjects["meesterproef"].name
-}));
+    }));
+})
+
+app.get('/hackathon', async (req, res) => {
+    return res.send(renderTemplate('views/hackathon.liquid', {
+        subject: subjects["hackathon"],
+        title: subjects["hackathon"].name
+    }));
 })
 
 app.get('/:name', async (req, res) => {
@@ -69,6 +76,7 @@ app.get('/:name', async (req, res) => {
             title: speakers[url].name
         }));
     } else if (weeklyNerds[url]) {
+        console.log(weeklyNerds[url].content.one)
         return res.send(renderTemplate('views/weekly-nerd.liquid', {
             weeklyNerd: weeklyNerds[url],
             title: weeklyNerds[url].name

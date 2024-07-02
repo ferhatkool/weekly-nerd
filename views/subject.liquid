@@ -10,24 +10,24 @@
     <div class="two">
         <div>
             <section class="left">
-                <p>Periode: {{ subject.date }}</p>
+                <p id="sub-title">Periode: {{ subject.date }}</p>
                 <h2>Omschrijving van het vak</h2>
-                {% for value in subject.content.one %}
-                    <p>{{ value }}</p>
+                {% for item in subject.content.one %}
+                    <p>{{ item }}</p>
                 {% endfor %}
             </section>
             <section class="left">
                 <h2>Reflectie</h2>
-                {% for value in subject.content.three %}
-                    <p>{{ value }}</p>
+                {% for item in subject.content.two %}
+                    <p>{{ item }}</p>
                 {% endfor %}
             </section>
         </div>
         <div>
             <section class="right">
                 <h2>Gemaakte opdracht</h2>
-                {% for value in subject.content.two %}
-                    <p>{{ value }}</p>
+                {% for item in subject.content.three %}
+                    <p>{{ item }}</p>
                 {% endfor %}
             </section>
 

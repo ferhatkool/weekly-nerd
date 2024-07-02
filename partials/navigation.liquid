@@ -1,4 +1,6 @@
 <footer>
+    {% comment %} <img class="logo" src="./pictures/logo-transparent-black-red.png"> {% endcomment %}
+     <div class="logo"></div>
             <nav role="navigation" class="primary-navigation">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -19,7 +21,7 @@
                             <li><a href="/nils-binder">Nils Binder</a></li>
                             <li><a href="/jeremy-keith">Jeremy Keith</a></li>
                             <li><a href="/marieke-en-pim">Marieke & Pim</a></li>
-                            <li><a href="/rosa-schuurman">Rosa</a></li>
+                            <li><a href="/rosa-schuurman">Rosa Schuurman</a></li>
                             <li><a href="/robert-spier">Robert Spier</a></li>
                             <li><a href="/pre-css-day">Pre-CSS Day</a></li>
                         </ul>
@@ -38,11 +40,24 @@
                         </ul>
                     </li>
                 </ul>
+
+                
+
+                </div>
                 {% comment %} <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
                     <i class="fa fa-bars"></i>
                   </a> {% endcomment %}
             </nav>
+            <div class="checkbox">
+                <label >
+                    <input type="checkbox" id="darkLightModeCheckbox">
+                    <img class="light-dark" src="./pictures/light-dark.png">
+                </label>
+                
+            </div>
+            <script src="./js/setDarkLightMode.js"></script>
             <script src="./js/script.js"></script>
             <script src="./js/dropdown.js"></script>
             <script src="./js/buttons.js"></script>
+            <script src="./js/timeoutCheckbox.js"></script>
         </footer>

@@ -18,3 +18,26 @@ main::-webkit-scrollbar-thumb:hover {
     background: #555;
     border-radius: 5px;
 }
+
+
+
+.slider::-webkit-scrollbar {
+    width: 5px;
+}
+      
+/* Track */
+.slider::-webkit-scrollbar-track {
+    background: none;
+}
+       
+/* Handle */
+.slider::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+      
+/* Handle on hover */
+.slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 5px;
+}
