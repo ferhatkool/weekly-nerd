@@ -216,13 +216,14 @@
                 .left {
                     
                     padding-right: 3em;
-                    width: 90%;
+                    width: calc(100% - 3em);
                     
                 }
     
                 .right {
 
                     padding-left: 3em;
+                    width: calc(100% - 3em);
                 }
             }
         }
